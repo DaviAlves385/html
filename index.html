@@ -7,62 +7,99 @@
 
 <style>
 
+/* RESET */
 body{
 font-family: Arial, sans-serif;
 margin:0;
-background:#f5f7fa;
+background:#f4f7fb;
 color:#333;
 }
 
-/* TOPO */
+/* HEADER */
 header{
-background:#0077ff;
+background:linear-gradient(135deg,#0077ff,#005ed1);
 color:white;
 text-align:center;
-padding:40px 20px;
+padding:60px 20px;
 }
 
 header h1{
 margin:0;
-font-size:42px;
+font-size:46px;
 }
 
-/* SEÇÕES */
+header p{
+margin-top:10px;
+opacity:0.9;
+}
+
+/* CONTAINER */
 .container{
-max-width:800px;
+max-width:900px;
 margin:auto;
-padding:40px 20px;
+padding:50px 20px;
 }
 
+/* SECTIONS */
 .section{
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 .section h2{
 color:#0077ff;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 /* CARDS */
 .card{
 background:white;
-padding:20px;
+padding:25px;
 margin:15px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+border-radius:14px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
 }
 
-/* CONTATO */
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* INFO */
 .info p{
-margin:8px 0;
+margin:10px 0;
+font-size:18px;
 }
 
-/* RODAPÉ */
+/* FOOTER */
 footer{
 background:#111;
 color:#aaa;
 text-align:center;
-padding:20px;
+padding:30px;
+}
+
+/* BOTÃO WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+header h1{font-size:32px;}
 }
 
 </style>
@@ -72,7 +109,7 @@ padding:20px;
 
 <header>
 <h1>HD Cell</h1>
-<p>Assistência técnica em celulares e tablets</p>
+<p>Assistência técnica especializada em celulares e tablets</p>
 </header>
 
 <div class="container">
@@ -87,7 +124,7 @@ padding:20px;
 
 <div class="card">
 <h3>📲 Conserto de Tablets</h3>
-<p>Manutenção para todas as marcas.</p>
+<p>Manutenção completa para todas as marcas.</p>
 </div>
 
 <div class="card">
@@ -112,8 +149,13 @@ padding:20px;
 </div>
 
 <footer>
-<p>© 2026 HD Cell</p>
+<p>© 2026 HD Cell — Todos os direitos reservados</p>
 </footer>
+
+<!-- BOTÃO WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/5511980595967" target="_blank">
+💬 WhatsApp
+</a>
 
 </body>
 </html>
