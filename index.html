@@ -3,74 +3,214 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HD Cell - Assistência Técnica</title>
-<link rel="stylesheet" href="style.css">
+<title>HD Cell — Assistência Técnica</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:#0a0a0a;
+color:white;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:60px 20px 40px;
+border-bottom:1px solid #1f1f1f;
+}
+
+header h1{
+font-size:64px;
+font-weight:700;
+letter-spacing:-2px;
+background:linear-gradient(90deg,#0077ff,#00c6ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+header p{
+margin-top:10px;
+color:#aaa;
+font-size:20px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.hero h2{
+font-size:44px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+color:#aaa;
+}
+
+/* SECTIONS */
+
+.section{
+max-width:1000px;
+margin:100px auto;
+padding:0 20px;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:50px;
+text-align:center;
+color:#0077ff;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:40px 30px;
+border-radius:16px;
+border:1px solid #1f1f1f;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#0077ff;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:22px;
+}
+
+/* INFO */
+
+.info{
+text-align:center;
+font-size:18px;
+}
+
+.info p{
+margin:10px 0;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:16px 40px;
+background:#0077ff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#005ed1;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:50px;
+margin-top:100px;
+border-top:1px solid #1f1f1f;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+header h1{font-size:42px;}
+.hero h2{font-size:32px;}
+}
+
+</style>
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <div class="logo-area">
-        <img src="logo.png" alt="HD Cell Logo">
-        <h1>HD Cell</h1>
-    </div>
-
-    <nav>
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-    </nav>
+<h1>HD Cell</h1>
+<p>Assistência técnica especializada em celulares e tablets</p>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-    <h2>Assistência Técnica Especializada</h2>
-    <p>Conserto profissional de celulares e tablets com rapidez e qualidade.</p>
+<h2>Conserto rápido, seguro e profissional</h2>
+<p>Especialistas em manutenção de celulares e tablets com qualidade, confiança e atendimento especializado.</p>
+<a href="#contato" class="btn">Fale conosco</a>
 </section>
 
-<section id="servicos" class="section">
-    <h2>Nossos Serviços</h2>
+<!-- SERVIÇOS -->
+<section class="section">
+<h2 class="section-title">Serviços</h2>
 
-    <div class="cards">
+<div class="services">
 
-        <div class="card">
-            <h3>📱 Conserto de Celulares</h3>
-            <p>Troca de tela, bateria, software, conector e muito mais.</p>
-        </div>
+<div class="card">
+<h3>📱 Conserto de Celulares</h3>
+<p>Troca de tela, bateria, software, conectores e reparos completos.</p>
+</div>
 
-        <div class="card">
-            <h3>📲 Conserto de Tablets</h3>
-            <p>Reparo completo para todas as marcas e modelos.</p>
-        </div>
+<div class="card">
+<h3>📲 Conserto de Tablets</h3>
+<p>Manutenção profissional para todas as marcas e modelos.</p>
+</div>
 
-        <div class="card">
-            <h3>⚡ Diagnóstico Rápido</h3>
-            <p>Avaliação rápida do problema com orçamento transparente.</p>
-        </div>
+<div class="card">
+<h3>⚡ Diagnóstico Rápido</h3>
+<p>Avaliação rápida e orçamento transparente.</p>
+</div>
 
-    </div>
+</div>
 </section>
 
-<section id="sobre" class="section dark">
-    <h2>Sobre a HD Cell</h2>
-    <p>Somos especialistas em assistência técnica para celulares e tablets, oferecendo qualidade, rapidez e confiança em cada serviço.</p>
-</section>
-
+<!-- CONTATO -->
 <section id="contato" class="section">
-    <h2>Contato</h2>
+<h2 class="section-title">Informações da Loja</h2>
 
-    <div class="info">
-        <p><strong>📍 Endereço:</strong> Rua Rio das Pedras 993</p>
-        <p><strong>🕒 Horário:</strong> 09h às 18h</p>
+<div class="info">
+<p><strong>📍 Endereço:</strong> Rua Rio das Pedras 993</p>
+<p><strong>🕒 Horário:</strong> 09h às 18h</p>
 
-        <br>
+<br>
 
-        <p><strong>👨‍🔧 Técnico:</strong> (11) 98059-5967</p>
-        <p><strong>🏪 Loja:</strong> (11) 91330-6088</p>
-    </div>
+<p><strong>👨‍🔧 Técnico:</strong> (11) 98059-5967</p>
+<p><strong>🏪 Loja:</strong> (11) 91330-6088</p>
+</div>
+
 </section>
 
 <footer>
-    <p>© 2025 HD Cell - Todos os direitos reservados</p>
+<p>© 2026 HD Cell — Todos os direitos reservados</p>
 </footer>
 
 </body>
